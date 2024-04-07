@@ -150,3 +150,6 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+larsson_2016/colorization_release_v0.caffemodel
+siggraph_2016/colornet.t7

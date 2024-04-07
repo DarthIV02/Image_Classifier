@@ -1,5 +1,5 @@
 _base="/root/siggraph2016_colorization"
-_dfiles="${_base}/landscape_64x64_bw/*.jpg"
+_dfiles="${_base}/landscape_256x256_bw/*.jpg"
  
 for f in $_dfiles
 do

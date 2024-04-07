@@ -1,0 +1,13 @@
+torch
+click
+numpy
+einops
+python-hostlist
+tqdm
+requests
+pyyaml
+timm
+mmcv
+mmsegmentation
+scikit-image
+lpips
