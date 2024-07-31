@@ -23,9 +23,11 @@ spec:
             nvidia.com/gpu: "1"
             memory: "16G"
             cpu: "1"
+            ephemeral-storage: "32Gi"
           requests:
              memory: "16G"
              cpu: "1"
+             ephemeral-storage: "32Gi"
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
