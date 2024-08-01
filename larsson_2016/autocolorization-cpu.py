@@ -29,9 +29,9 @@ net.blobs['Trecip'].data[...] = 6/np.log(10) # 1/T, set annealing temperature
 
 # Loading the image
 
-for current_frame in os.listdir('./landscape_256x256_bw/'):
+for current_frame in os.listdir('./imagenet_64x64_bw/'):
     print current_frame
-    img_rgb = caffe.io.load_image('./landscape_256x256_bw/'+str(current_frame))
+    img_rgb = caffe.io.load_image('./imagenet_64x64_bw/'+str(current_frame))
     # img_rgb = caffe.io.load_image('./imgs/ILSVRC2012_val_00041580.JPEG')
     img_lab = color.rgb2lab(img_rgb) # convert image to lab color space
     img_l = img_lab[:,:,0] # pull out L channel
