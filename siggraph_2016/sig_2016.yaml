@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: color-img
+  name: color-img-sig
   labels:
     k8s-app: color-img-sig
 spec:
@@ -23,9 +23,11 @@ spec:
             nvidia.com/gpu: "1"
             memory: "8G"
             cpu: "1"
+            ephemeral-storage: "8Gi"
           requests:
              memory: "8G"
              cpu: "1"
+             ephemeral-storage: "8Gi"
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
