@@ -24,7 +24,8 @@ from shutil import copyfile
 import os.path
 import cv2
 import numpy as np
-from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array,load_img
+from keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.utils import img_to_array, array_to_img, load_img
 from PIL import Image
 from sklearn.model_selection import train_test_split
 from numpy import load
